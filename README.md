@@ -72,7 +72,7 @@ powerbi-retail-sales-dashboard/
 │   └── dashboard_preview.png
 └── scripts/
     └── generate_locations.R
-
+```
 ## How to Use
 
 1. Download the `.pbix` file from the **dashboard** folder.
