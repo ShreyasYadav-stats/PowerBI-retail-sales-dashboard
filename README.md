@@ -8,7 +8,7 @@ The purpose of this project is to showcase familiarity with Power BI as a busine
 
 ## Dashboard Preview
 
-![Dashboard](images/dashboard_preview.png)
+![Dashboard](images/Dashboard_Preview.png)
 
 ## Key Features
 
