@@ -1,43 +1,49 @@
-# Retail Sales Dashboard (Power BI)
+# Retail Sales Performance Dashboard (Power BI)
 
 ## Overview
 
-This project demonstrates the design of an interactive Power BI dashboard for exploring retail sales performance across geography, time, product categories and customer demographics.
+This project presents an interactive Power BI dashboard analysing retail sales performance across geography, product categories, customer demographics and time.
 
-The purpose of this project is to showcase familiarity with Power BI as a business intelligence and data visualisation tool, including dashboard layout, KPI reporting and interactive filtering. This project focuses on visual reporting and dashboard construction rather than statistical modelling.
+The objective of this analysis is to explore key sales patterns and identify areas where retail managers could focus their efforts to improve revenue and customer engagement.
+
+The dashboard enables stakeholders to quickly understand:
+* which regions generate the most revenue
+* which product categories drive sales
+* which customer segments contribute the most to purchases
+* how sales trends evolve over time
+
+The report is designed to support high-level decision making and performance monitoring.
 
 ## Dashboard Preview
 
 ![Dashboard](images/Dashboard_Preview.png)
 
+## Business Questions
+
+This dashboard was built to explore several key business questions:
+1. Which states contribute the most to overall retail sales?
+2. How does product category performance vary across regions?
+3. Which customer age groups generate the highest revenue?
+4. Are there noticeable trends in sales and purchase quantities over time?
+5. Which store locations perform best within each state?
+
+Answering these questions helps retail managers identify high-performing regions, key customer segments and potential areas for sales growth.
+
 ## Key Features
 
-The dashboard provides a high level overview of retail sales performance and allows users to explore the data interactively.
+From the analysis presented in the dashboard:
 
-Main components include:
+- **Sales concentration**: Revenue is largely concentrated in a few states, indicating that certain regions drive the majority of sales performance.
+- **Category performance**: Electronics and Clothing contribute the largest share of total sales across most regions.
+- **Customer demographics**: Customers between the ages of 25-44 generate the highest volume of purchases, suggesting this segment may represent the core customer base.
+- **Consistent demand over time**: Monthly sales remain relatively stable throughout the year, indicating steady demand across product categories.
 
-- KPI Summary
-  - Total Sales
-  - Quantity Sold
-  - Average Order Value
-
-- Geographic Analysis
-  - Store locations visualised using ArcGIS Maps for Power BI
-  - Sales aggregated by Australian state
-  - Interactive filtering between map and tables
-
-- Time Series Analysis
-  - Monthly trend of total sales and quantity sold
-
-- Customer Segmentation
-  - Sales distribution across age groups
-
-- Product Performance
-  - Revenue contribution by product category
-  - Category performance by state
-
-- Interactive Drill Down
-  - Selecting a state filters store level sales data
+## Business Recommendations
+Based on the analysis, several actions could be considered:
+- Focus marketing campaigns on high-value customer segments, particularly customers aged 25-44.
+- Investigate strategies used in top-performing regions and replicate them in lower-performing areas.
+- Prioritize inventory and promotions for high-performing product categories such as electronics.
+- Continue monitoring monthly sales trends to identify potential seasonal patterns or emerging demand shifts.
 
 ## Tools and Technologies
 
@@ -46,7 +52,6 @@ This project uses:
 - Power BI
 - ArcGIS Maps for Power BI
 - R for data enrichment and location generation
-- Power Query for data preparation
 
 ## Data
 
@@ -62,15 +67,13 @@ Store locations were generated programmatically to simulate Australian retail ou
 ## Repository Structure
 
 ```text
-powerbi-retail-sales-dashboard/
+powerbi-retail-sales-dashboard
 │
-├── dashboard/
+├── dashboard
 │   └── retail_sales_dashboard.pbix
-├── data/
-│   └── retail_sales_with_locations.csv
-├── images/
+├── images
 │   └── dashboard_preview.png
-└── scripts/
+└── scripts
     └── generate_locations.R
 ```
 ## How to Use
@@ -83,11 +86,8 @@ powerbi-retail-sales-dashboard/
 
 ## Purpose of the Project
 
-This project is intended as a **Power BI portfolio piece**, demonstrating:
+This project demonstrates how business intelligence tools such as Power BI can be used to transform transactional data into an interactive reporting dashboard that supports data-driven decision making.
 
-- dashboard construction
-- business KPI reporting
-- interactive visual exploration
-- integration of geospatial visuals
+The focus of the project is on dashboard design, business metric reporting and interactive data exploration rather than advanced statistical modelling.
 
 More advanced statistical analysis and modelling are demonstrated in other repositories.
